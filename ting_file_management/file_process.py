@@ -23,7 +23,7 @@ def process(path_file, instance):
 
 def remove(instance):
     """Aqui irá sua implementação"""
-    if len(instance._data) == 0 or not instance:
+    if instance._length == 0 or not instance:
         return print("Não há elementos", file=sys.stdout)
 
     path_file = instance.dequeue()["nome_do_arquivo"]
